@@ -68,13 +68,13 @@ export class Server {
     });
     await server.start();
     this.app.use('/graphql', expressMiddleware(server));
-    console.log(" gql  Endpoint GraphQL configurado en /graphql.");
+    console.log("gql  Endpoint GraphQL configurado en /graphql.");
   }
 
   // Método para configurar Swagger
   private setupSwagger(): void {
     this.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-    console.log(" docs  Documentación Swagger disponible en /api-docs.");
+    console.log("Docs  Documentación Swagger disponible en /api-docs.");
   }
 
   // Modificado a 'async' para esperar a Apollo Server
