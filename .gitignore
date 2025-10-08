@@ -1,0 +1,9 @@
+# Dependencias
+/node_modules
+
+# Base de datos de Prisma
+/prisma/dev.db
+/prisma/dev.db-journal
+
+# Archivos de entorno
+.env
